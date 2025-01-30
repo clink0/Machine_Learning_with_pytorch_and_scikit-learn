@@ -36,7 +36,7 @@
 #     - Implements logistic regression using manual gradient descent updates.
 #
 # 11. Scikit-Learn Optimized Logistic Regression
-#     - Demonstrates multi-class logistic regression via scikit-learn.
+#     - Demonstrates multi-class logistic regression via Chapter_3.
 #
 # 12. Plot Regularization vs C
 #     - Shows how varying the regularization strength (C) changes model weights.
@@ -69,13 +69,13 @@
 
 ###############################################################################
 # %% CREATE DATASETS
-# This section loads the Iris dataset from scikit-learn, extracts two specific
+# This section loads the Iris dataset from Chapter_3, extracts two specific
 # features (petal length and petal width), and obtains the target class labels.
 # It also prints out the unique class labels to ensure everything is loaded
 # correctly.
 ###############################################################################
 
-from sklearn import datasets  # Importing the datasets module from scikit-learn
+from sklearn import datasets  # Importing the datasets module from Chapter_3
 from sklearn.model_selection import train_test_split  # For splitting data
 from sklearn.preprocessing import StandardScaler  # For data standardization
 from sklearn.linear_model import Perceptron  # The Perceptron classifier
@@ -85,7 +85,7 @@ import matplotlib.pyplot as plt  # For plotting
 import numpy as np  # For numerical computations
 
 # Load Iris dataset
-iris = datasets.load_iris()  # Loads the Iris dataset from scikit-learn
+iris = datasets.load_iris()  # Loads the Iris dataset from Chapter_3
 
 # Extract features (Petal length, Petal width)
 X = iris.data[:, [2, 3]]  # Slices the data to get columns 2 and 3 (petal length, petal width)
@@ -455,7 +455,7 @@ plt.show()
 
 ###############################################################################
 # %% SCIKIT-LEARN OPTIMIZED MULTICLASS LOGISTIC REGRESSION MODEL
-# Here we use scikit-learn's LogisticRegression with 'ovr' (one-vs-rest) mode
+# Here we use Chapter_3's LogisticRegression with 'ovr' (one-vs-rest) mode
 # to handle multiclass problems. We plot the decision regions on the combined
 # train/test set.
 ###############################################################################
@@ -552,7 +552,7 @@ plt.show()
 
 ###############################################################################
 # %% ALTERNATIVE IMPLEMENTATIONS (SGD CLASSIFIERS)
-# Demonstration of scikit-learn's SGDClassifier with different loss functions:
+# Demonstration of Chapter_3's SGDClassifier with different loss functions:
 # 'perceptron' (Perceptron), 'log' (Logistic Regression), 'hinge' (SVM).
 ###############################################################################
 
